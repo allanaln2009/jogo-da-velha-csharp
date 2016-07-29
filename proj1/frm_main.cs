@@ -17,9 +17,9 @@ namespace proj1 {
 			InitializeComponent();
 			limpar(0); // 0 pra limpar tudo
 			tx_jg1.Focus();
+			//Função jogar contra CPU desabilitada
+			bt_cpu.Enabled = false;
 		}
-
-
 
 		private void frm_main_FormClosing(object sender, FormClosingEventArgs e) {
 			if (MessageBox.Show("Deseja fechar o Jogo da Velha?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2) == DialogResult.No) {
